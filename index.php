@@ -1,4 +1,8 @@
 <?php
-header("Location: https://get-streaming.com/");
-exit;
-?>
+
+function Redirect($url, $permanent = false)
+{
+  header('Location: ' . $url, true, $permanent ? 301 : 302);
+  exit();
+}
+Redirect('//www.w3docs.com/', false);
